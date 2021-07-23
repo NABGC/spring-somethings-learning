@@ -29,3 +29,6 @@ rm -rf /var/lib/etcd
 rm -rf /var/etcd
 yum clean all
 yum remove kube*
+
+博客
+https://www.cnblogs.com/dukuan/
