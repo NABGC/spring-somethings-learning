@@ -7,7 +7,7 @@ https://jimmysong.io/kubernetes-handbook
 https://kubernetes.feisky.xyz/
 
 **卸载Docker**
-1.首先搜索已经安装的docker安装包
+````1.首先搜索已经安装的docker安装包
 yum list installed | grep docker 或是 rpm -qa | grep docker
 2. 移除包
 yum –y remove docker.x86_64
@@ -15,9 +15,9 @@ yum –y remove docker.x86_64
 rm -rf /var/lib/docker
 
 **卸载 kubernetes**
-kubeadm reset -f
+````kubeadm reset -f
 modprobe -r ipip
-lsmod
+lsmod*
 rm -rf ~/.kube/
 rm -rf /etc/kubernetes/
 rm -rf /etc/systemd/system/kubelet.service.d
@@ -32,3 +32,18 @@ yum remove kube*
 
 博客
 https://www.cnblogs.com/dukuan/
+
+博客2
+https://forums.rancher.com/t/rancher-agent-x509-certificate-signed-by-unknown-authority-with-digicert/15134
+
+博客3
+https://blog.csdn.net/Sara_cloud/article/details/117772769
+
+博客4
+https://cloud.tencent.com/developer/article/1638170
+
+博客5
+https://www.bookstack.cn/read/rancher-2.4.4-zh/8aab30986b4e9181.md
+
+博客6
+https://www.infoq.cn/article/Kj6eb3pA5od996rfFdHR
